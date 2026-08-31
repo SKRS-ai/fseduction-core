@@ -175,7 +175,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 90px;               /* increased to fit larger logo */
   gap: 24px;
 }
 
@@ -183,17 +183,17 @@ button {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
   color: #fff;
   font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
 
 .logo-img {
-  height: 42px;
+  height: 80px;               /* ← Larger & detailed */
   width: auto;
   display: block;
 }
@@ -323,8 +323,8 @@ button {
 /* ========== VIDEO CARDS (LARGER) ========== */
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
 }
 
 .video-card {
@@ -335,7 +335,7 @@ button {
 }
 
 .video-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow);
 }
 
@@ -359,20 +359,20 @@ button {
 
 .video-duration {
   position: absolute;
-  bottom: 8px;
-  right: 8px;
+  bottom: 10px;
+  right: 10px;
   background: rgba(0,0,0,0.85);
-  font-size: 0.78rem;
-  padding: 3px 7px;
+  font-size: 0.8rem;
+  padding: 3px 8px;
   border-radius: 4px;
 }
 
 .video-info {
-  padding: 14px 16px;
+  padding: 16px 18px;
 }
 
 .video-info h3 {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 6px;
   line-height: 1.35;
@@ -383,7 +383,7 @@ button {
 }
 
 .video-meta {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: var(--color-text-muted);
   display: flex;
   gap: 8px;
@@ -571,7 +571,7 @@ button {
 /* ========== RESPONSIVE ========== */
 @media (min-width: 1200px) {
   .video-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
 
@@ -595,19 +595,19 @@ button {
     grid-template-columns: 1fr;
   }
   .header-main {
-    height: 60px;
+    height: 70px;
   }
   .logo-img {
-    height: 36px;
+    height: 52px;
   }
   .logo-text {
     display: none;
   }
   .video-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 18px;
   }
   .video-info h3 {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 }
