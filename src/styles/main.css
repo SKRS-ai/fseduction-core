@@ -88,39 +88,46 @@ button {
   padding: 0 24px;
 }
 
+/* ========== SEXY BUTTONS ========== */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 28px;
+  padding: 14px 32px;
   font-size: 0.95rem;
   font-weight: 600;
-  border-radius: var(--radius);
-  transition: all var(--transition);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .btn-primary {
-  background: var(--color-burgundy);
+  background: linear-gradient(135deg, #e60026, #ff2d55);
   color: white;
-  box-shadow: 0 4px 15px rgba(230, 0, 38, 0.4);
+  box-shadow: 0 6px 20px rgba(230, 0, 38, 0.45);
+  border: none;
 }
 
 .btn-primary:hover {
-  background: var(--color-burgundy-light);
+  background: linear-gradient(135deg, #ff1a3c, #ff4d6d);
   color: white;
-  box-shadow: 0 6px 20px rgba(255, 26, 60, 0.5);
+  box-shadow: 0 8px 28px rgba(255, 45, 85, 0.55);
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
   background: transparent;
   color: var(--color-text);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-burgundy);
 }
 
 .btn-secondary:hover {
-  border-color: var(--color-burgundy);
+  background: rgba(230, 0, 38, 0.15);
+  border-color: var(--color-accent);
   color: var(--color-accent);
+  box-shadow: 0 0 18px rgba(255, 45, 85, 0.25);
 }
 
 .section {
@@ -156,9 +163,9 @@ button {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(5, 5, 5, 0.92);
+  background: rgba(5, 5, 5, 0.95);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 2px solid var(--color-burgundy);
 }
 
 .header-top {
@@ -175,7 +182,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 78px;
+  height: 92px;
   gap: 24px;
 }
 
@@ -183,20 +190,20 @@ button {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   text-decoration: none;
   color: #fff;
   font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   flex-shrink: 0;
 }
 
 .logo-img {
-  height: 254px;
+  height: 68px;
   width: auto;
-  max-height: 254px;
+  max-height: 68px;
   display: block;
   object-fit: contain;
 }
@@ -598,11 +605,11 @@ button {
     grid-template-columns: 1fr;
   }
   .header-main {
-    height: 64px;
+    height: 72px;
   }
   .logo-img {
-    height: 48px;
-    max-height: 48px;
+    height: 50px;
+    max-height: 50px;
   }
   .logo-text {
     display: none;
