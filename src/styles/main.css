@@ -194,9 +194,9 @@ button {
 }
 
 .logo-img {
-  height: 120px;
+  height: 164px;
   width: auto;
-  max-height: 120px;
+  max-height: 164px;
   display: block;
   object-fit: contain;
 }
