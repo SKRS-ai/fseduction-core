@@ -320,22 +320,22 @@ button {
   border-radius: 4px;
 }
 
-/* ========== VIDEO CARDS (SMALLER & DENSER) ========== */
+/* ========== VIDEO CARDS (LARGER) ========== */
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
 }
 
 .video-card {
   background: var(--color-bg-card);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   overflow: hidden;
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
 .video-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   box-shadow: var(--shadow);
 }
 
@@ -359,23 +359,23 @@ button {
 
 .video-duration {
   position: absolute;
-  bottom: 6px;
-  right: 6px;
+  bottom: 8px;
+  right: 8px;
   background: rgba(0,0,0,0.85);
-  font-size: 0.7rem;
-  padding: 2px 5px;
-  border-radius: 3px;
+  font-size: 0.78rem;
+  padding: 3px 7px;
+  border-radius: 4px;
 }
 
 .video-info {
-  padding: 10px 12px;
+  padding: 14px 16px;
 }
 
 .video-info h3 {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  margin-bottom: 5px;
-  line-height: 1.3;
+  margin-bottom: 6px;
+  line-height: 1.35;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -383,10 +383,10 @@ button {
 }
 
 .video-meta {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: var(--color-text-muted);
   display: flex;
-  gap: 6px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
@@ -571,7 +571,7 @@ button {
 /* ========== RESPONSIVE ========== */
 @media (min-width: 1200px) {
   .video-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
 }
 
@@ -601,13 +601,13 @@ button {
     height: 36px;
   }
   .logo-text {
-    display: none; /* optional: hide text on mobile, show only icon */
+    display: none;
   }
   .video-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
   .video-info h3 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
