@@ -175,7 +175,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 90px;               /* increased to fit larger logo */
+  height: 78px;
   gap: 24px;
 }
 
@@ -187,15 +187,18 @@ button {
   text-decoration: none;
   color: #fff;
   font-family: var(--font-display);
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: 0.03em;
+  flex-shrink: 0;
 }
 
 .logo-img {
-  height: 80px;               /* ← Larger & detailed */
+  height: 64px;
   width: auto;
+  max-height: 64px;
   display: block;
+  object-fit: contain;
 }
 
 .logo-text span,
@@ -595,10 +598,11 @@ button {
     grid-template-columns: 1fr;
   }
   .header-main {
-    height: 70px;
+    height: 64px;
   }
   .logo-img {
-    height: 52px;
+    height: 48px;
+    max-height: 48px;
   }
   .logo-text {
     display: none;
