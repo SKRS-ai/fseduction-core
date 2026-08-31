@@ -201,9 +201,9 @@ button {
 }
 
 .logo-img {
-  height: 68px;
+  height: 260px;
   width: auto;
-  max-height: 68px;
+  max-height: 260px;
   display: block;
   object-fit: contain;
 }
