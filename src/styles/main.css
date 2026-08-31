@@ -5,28 +5,22 @@
    ============================================ */
 
 :root {
-  /* Backgrounds - deep black */
   --color-bg: #050505;
   --color-bg-elevated: #0e0e0e;
   --color-bg-card: #161616;
 
-  /* Passionate Reds */
   --color-burgundy: #e60026;
   --color-burgundy-light: #ff1a3c;
   --color-burgundy-dark: #b3001c;
 
-  /* Lustful Accent */
   --color-accent: #ff2d55;
 
-  /* Text */
   --color-text: #ffffff;
   --color-text-muted: #d0d0d0;
   --color-text-dim: #888888;
 
-  /* Borders */
   --color-border: #2a2a2a;
 
-  /* Typography & Effects */
   --font-main: 'Inter', system-ui, -apple-system, sans-serif;
   --font-display: 'Playfair Display', Georgia, serif;
   --radius: 8px;
@@ -182,7 +176,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 92px;
+  height: 190px;
   gap: 24px;
 }
 
@@ -190,20 +184,20 @@ button {
 .logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
   text-decoration: none;
   color: #fff;
   font-family: var(--font-display);
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   flex-shrink: 0;
 }
 
 .logo-img {
-  height: 260px;
+  height: 160px;
   width: auto;
-  max-height: 260px;
+  max-height: 160px;
   display: block;
   object-fit: contain;
 }
@@ -330,7 +324,7 @@ button {
   border-radius: 4px;
 }
 
-/* ========== VIDEO CARDS (LARGER) ========== */
+/* ========== VIDEO CARDS ========== */
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -605,11 +599,11 @@ button {
     grid-template-columns: 1fr;
   }
   .header-main {
-    height: 72px;
+    height: 110px;
   }
   .logo-img {
-    height: 50px;
-    max-height: 50px;
+    height: 80px;
+    max-height: 80px;
   }
   .logo-text {
     display: none;
